@@ -1,0 +1,33 @@
+{
+  "name": "bus-torino-live",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "data": "tsx scripts/build-data.ts",
+    "dev": "next dev",
+    "build": "tsx scripts/build-data.ts && next build",
+    "build:nodata": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx tests/estimate.test.mts && tsx tests/search.test.mts && tsx tests/confidence.test.mts"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2",
+    "gtfs-realtime-bindings": "^1.1.1",
+    "leaflet": "^1.9.4",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.12",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
